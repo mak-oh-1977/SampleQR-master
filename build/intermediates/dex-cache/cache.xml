@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\ohnuma\AndroidStudioProjects\SampleQR\app\libs\javase.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="781e45c7b4ce95e620e943338725f8b2aa47abc7">
+        <dex dex="C:\Users\ohnuma\AndroidStudioProjects\SampleQR\app\build\intermediates\pre-dexed\debug\javase-0b9f1a8556f788552f0c56ea35791688cdbcdc51.jar" />
+    </item>
+    <item
+        jar="C:\Users\ohnuma\AndroidStudioProjects\SampleQR\app\libs\core.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="69ab751723c7f7c8a01fddb1d169a93160fadca7">
+        <dex dex="C:\Users\ohnuma\AndroidStudioProjects\SampleQR\app\build\intermediates\pre-dexed\debug\core-3e6d0f2ad4f6c29dc69a1bbae0063f7a7fd15081.jar" />
+    </item>
+    <item
+        jar="C:\Users\ohnuma\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\ohnuma\AndroidStudioProjects\SampleQR\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-4de8fd099dff2ab621fe4e0c58033171b231a176.jar" />
+    </item>
+
+</items>
