@@ -9,6 +9,8 @@ import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -71,8 +73,16 @@ public class AsyncHttpRequest extends AsyncTask<String, Void, String> {
     // このメソッドは非同期処理の終わった後に呼び出されます
     @Override
     protected void onPostExecute(String result) {
-        Toast.makeText(mainActivity.getApplicationContext(), result, Toast.LENGTH_LONG)
-                .show();
+        try {
+            JSONObject rootObject = new JSONObject(result);
+            String res = rootObject.getString("res");
+
+            Toast.makeText(mainActivity.getApplicationContext(), res, Toast.LENGTH_LONG)
+                    .show();
+        }catch(JSONException e)
+        {
+        }
+
         // 取得した結果をテキストビューに入れちゃったり
 //        TextView tv = (TextView) mainActivity.findViewById(R.id.name);
 //        tv.setText(result)
